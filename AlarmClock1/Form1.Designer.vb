@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAlarm1Enable = New System.Windows.Forms.Button()
         Me.udMINAlarm1 = New System.Windows.Forms.NumericUpDown()
@@ -31,6 +32,7 @@ Partial Class Form1
         Me.txtAlarm1Name = New System.Windows.Forms.TextBox()
         Me.lblTimeDisplay = New System.Windows.Forms.Label()
         Me.TimeDetector = New System.Windows.Forms.Timer(Me.components)
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.udMINAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udHRAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,6 +114,12 @@ Partial Class Form1
         Me.TimeDetector.Enabled = True
         Me.TimeDetector.Interval = 1000
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -120,9 +128,10 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(600, 337)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblTimeDisplay)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Alarms (by MrTheUnknown)"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.udMINAlarm1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -138,4 +147,5 @@ Partial Class Form1
     Friend WithEvents udMINAlarm1 As NumericUpDown
     Friend WithEvents udHRAlarm1 As NumericUpDown
     Friend WithEvents btnAlarm1Enable As Button
+    Private WithEvents NotifyIcon1 As NotifyIcon
 End Class
