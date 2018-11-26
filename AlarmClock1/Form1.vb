@@ -14,7 +14,7 @@
             btnAlarm1Enable.Text = "Disabled"
             btnAlarm1Enable.BackColor = Color.Red
             Alarm1Enabled = False
-            MsgBox("Your alarm, " + txtAlarm1Name.Text + "has been activated", , txtAlarm1Name.Text)
+            MsgBox("Your alarm, " + txtAlarm1Name.Text + " has been activated", , txtAlarm1Name.Text)
 
         End If
     End Sub

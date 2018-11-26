@@ -23,8 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAlarm1Enable = New System.Windows.Forms.Button()
         Me.udMINAlarm1 = New System.Windows.Forms.NumericUpDown()
@@ -32,52 +30,21 @@ Partial Class Form1
         Me.dtpAlarm1 = New System.Windows.Forms.DateTimePicker()
         Me.txtAlarm1Name = New System.Windows.Forms.TextBox()
         Me.lblTimeDisplay = New System.Windows.Forms.Label()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TimeDetector = New System.Windows.Forms.Timer(Me.components)
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.udMINAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udHRAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(600, 366)
-        Me.TabControl1.TabIndex = 0
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.GroupBox1)
-        Me.TabPage1.Controls.Add(Me.lblTimeDisplay)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
-        Me.TabPage1.Size = New System.Drawing.Size(592, 340)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Alarms"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.White
         Me.GroupBox1.Controls.Add(Me.btnAlarm1Enable)
         Me.GroupBox1.Controls.Add(Me.udMINAlarm1)
         Me.GroupBox1.Controls.Add(Me.udHRAlarm1)
         Me.GroupBox1.Controls.Add(Me.dtpAlarm1)
         Me.GroupBox1.Controls.Add(Me.txtAlarm1Name)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 4)
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 11)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
@@ -132,44 +99,13 @@ Partial Class Form1
         '
         'lblTimeDisplay
         '
-        Me.lblTimeDisplay.Location = New System.Drawing.Point(484, 322)
+        Me.lblTimeDisplay.Location = New System.Drawing.Point(482, 9)
         Me.lblTimeDisplay.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTimeDisplay.Name = "lblTimeDisplay"
         Me.lblTimeDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblTimeDisplay.Size = New System.Drawing.Size(107, 18)
         Me.lblTimeDisplay.TabIndex = 0
         Me.lblTimeDisplay.Text = "Time updating..."
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
-        Me.TabPage2.Size = New System.Drawing.Size(592, 340)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Alarm Type"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(592, 340)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Settings"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(592, 340)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Credits"
-        Me.TabPage4.UseVisualStyleBackColor = True
         '
         'TimeDetector
         '
@@ -180,13 +116,13 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 366)
-        Me.Controls.Add(Me.TabControl1)
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ClientSize = New System.Drawing.Size(600, 337)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.lblTimeDisplay)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.udMINAlarm1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -194,12 +130,6 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage4 As TabPage
     Friend WithEvents TimeDetector As Timer
     Friend WithEvents lblTimeDisplay As Label
     Friend WithEvents GroupBox1 As GroupBox
