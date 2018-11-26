@@ -26,6 +26,7 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnAlarm1Enable = New System.Windows.Forms.Button()
         Me.udMINAlarm1 = New System.Windows.Forms.NumericUpDown()
         Me.udHRAlarm1 = New System.Windows.Forms.NumericUpDown()
         Me.dtpAlarm1 = New System.Windows.Forms.DateTimePicker()
@@ -50,99 +51,122 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(800, 450)
+        Me.TabControl1.Size = New System.Drawing.Size(600, 366)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.GroupBox1)
         Me.TabPage1.Controls.Add(Me.lblTimeDisplay)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(792, 421)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
+        Me.TabPage1.Size = New System.Drawing.Size(592, 340)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Alarms"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnAlarm1Enable)
         Me.GroupBox1.Controls.Add(Me.udMINAlarm1)
         Me.GroupBox1.Controls.Add(Me.udHRAlarm1)
         Me.GroupBox1.Controls.Add(Me.dtpAlarm1)
         Me.GroupBox1.Controls.Add(Me.txtAlarm1Name)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(157, 385)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Size = New System.Drawing.Size(118, 313)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "AlarmSet1"
+        Me.GroupBox1.Text = "Alarm 1 Properties"
+        '
+        'btnAlarm1Enable
+        '
+        Me.btnAlarm1Enable.BackColor = System.Drawing.Color.Red
+        Me.btnAlarm1Enable.Location = New System.Drawing.Point(15, 175)
+        Me.btnAlarm1Enable.Name = "btnAlarm1Enable"
+        Me.btnAlarm1Enable.Size = New System.Drawing.Size(89, 122)
+        Me.btnAlarm1Enable.TabIndex = 4
+        Me.btnAlarm1Enable.Text = "Disabled"
+        Me.btnAlarm1Enable.UseVisualStyleBackColor = False
         '
         'udMINAlarm1
         '
-        Me.udMINAlarm1.Location = New System.Drawing.Point(20, 133)
+        Me.udMINAlarm1.Location = New System.Drawing.Point(15, 109)
+        Me.udMINAlarm1.Margin = New System.Windows.Forms.Padding(2)
         Me.udMINAlarm1.Name = "udMINAlarm1"
-        Me.udMINAlarm1.Size = New System.Drawing.Size(120, 22)
+        Me.udMINAlarm1.Size = New System.Drawing.Size(90, 20)
         Me.udMINAlarm1.TabIndex = 2
         '
         'udHRAlarm1
         '
-        Me.udHRAlarm1.Location = New System.Drawing.Point(20, 105)
+        Me.udHRAlarm1.Location = New System.Drawing.Point(15, 85)
+        Me.udHRAlarm1.Margin = New System.Windows.Forms.Padding(2)
         Me.udHRAlarm1.Name = "udHRAlarm1"
-        Me.udHRAlarm1.Size = New System.Drawing.Size(120, 22)
+        Me.udHRAlarm1.Size = New System.Drawing.Size(90, 20)
         Me.udHRAlarm1.TabIndex = 3
         '
         'dtpAlarm1
         '
         Me.dtpAlarm1.CustomFormat = "'MM'/'dd'/'yyyy'"
-        Me.dtpAlarm1.Location = New System.Drawing.Point(20, 77)
+        Me.dtpAlarm1.Location = New System.Drawing.Point(15, 61)
+        Me.dtpAlarm1.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpAlarm1.Name = "dtpAlarm1"
-        Me.dtpAlarm1.Size = New System.Drawing.Size(122, 22)
+        Me.dtpAlarm1.Size = New System.Drawing.Size(92, 20)
         Me.dtpAlarm1.TabIndex = 1
         '
         'txtAlarm1Name
         '
-        Me.txtAlarm1Name.Location = New System.Drawing.Point(20, 21)
+        Me.txtAlarm1Name.Location = New System.Drawing.Point(15, 17)
+        Me.txtAlarm1Name.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAlarm1Name.Name = "txtAlarm1Name"
-        Me.txtAlarm1Name.Size = New System.Drawing.Size(122, 22)
+        Me.txtAlarm1Name.Size = New System.Drawing.Size(92, 20)
         Me.txtAlarm1Name.TabIndex = 0
         Me.txtAlarm1Name.Text = "Alarm Name"
         '
         'lblTimeDisplay
         '
-        Me.lblTimeDisplay.Location = New System.Drawing.Point(646, 396)
+        Me.lblTimeDisplay.Location = New System.Drawing.Point(484, 322)
+        Me.lblTimeDisplay.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTimeDisplay.Name = "lblTimeDisplay"
         Me.lblTimeDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.lblTimeDisplay.Size = New System.Drawing.Size(143, 22)
+        Me.lblTimeDisplay.Size = New System.Drawing.Size(107, 18)
         Me.lblTimeDisplay.TabIndex = 0
         Me.lblTimeDisplay.Text = "Time updating..."
         '
         'TabPage2
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(792, 421)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
+        Me.TabPage2.Size = New System.Drawing.Size(592, 340)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Alarm Type"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(792, 421)
+        Me.TabPage3.Size = New System.Drawing.Size(592, 340)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Settings"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'TabPage4
         '
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(792, 421)
+        Me.TabPage4.Size = New System.Drawing.Size(592, 340)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Credits"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -154,10 +178,11 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.TabControl1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.TabControl1.ResumeLayout(False)
@@ -182,4 +207,5 @@ Partial Class Form1
     Friend WithEvents dtpAlarm1 As DateTimePicker
     Friend WithEvents udMINAlarm1 As NumericUpDown
     Friend WithEvents udHRAlarm1 As NumericUpDown
+    Friend WithEvents btnAlarm1Enable As Button
 End Class
