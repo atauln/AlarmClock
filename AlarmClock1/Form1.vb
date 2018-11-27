@@ -3,9 +3,9 @@
     Private Sub TimeDetector_Tick(sender As Object, e As EventArgs) Handles TimeDetector.Tick
         CurrentTime = TimeString
         lblTimeDisplay.Text = CurrentTime
-        Dim NowTime = Now.ToString
+        Dim NowTime = DateString
         Dim DateValueAlarm1 = FormatDateTime(dtpAlarm1.Value.ToString, DateFormat.ShortDate)
-        If NowTime.Substring(0, 2) = DateValueAlarm1.Substring(0, 2) And NowTime.Substring(3, 2) = DateValueAlarm1.Substring(3, 2) And NowTime.Substring(6, 2) = DateValueAlarm1.Substring(6, 2) And NowTime.Substring(10, 2) = udHRAlarm1.Value And NowTime.Substring(14, 2) = udMINAlarm1.Value Then
+        If NowTime.Substring(0, 2) = DateValueAlarm1.Substring(0, 2) And NowTime.Substring(3, 2) = DateValueAlarm1.Substring(3, 2) And NowTime.Substring(6, 2) = DateValueAlarm1.Substring(6, 2) And CurrentTime.Substring(0, 2) = udHRAlarm1.Value And CurrentTime.Substring(3, 2) = udMINAlarm1.Value Then
             MsgBox("Your alarm, " + txtAlarm1Name.Text + "has been activated", , txtAlarm1Name.Text)
         End If
     End Sub
