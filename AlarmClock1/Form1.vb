@@ -58,8 +58,8 @@
     End Sub
 
     Private Sub Timer1Stopwatch_Tick(sender As Object, e As EventArgs) Handles Timer1Stopwatch.Tick
-        StopWatchTime += 0.02
-        StopWatchTime = Math.Round(StopWatchTime, 2)
+        StopWatchTime += 0.1
+        StopWatchTime = Math.Round(StopWatchTime, 1)
         lblStopwatch.Text = StopWatchTime.ToString + "s"
     End Sub
 
