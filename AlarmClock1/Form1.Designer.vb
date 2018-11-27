@@ -122,7 +122,6 @@ Partial Class AlarmClockDashboard
         Me.lblTimeDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblTimeDisplay.Size = New System.Drawing.Size(143, 22)
         Me.lblTimeDisplay.TabIndex = 0
-        Me.lblTimeDisplay.Text = "Time updating..."
         '
         'TimeDetector
         '
