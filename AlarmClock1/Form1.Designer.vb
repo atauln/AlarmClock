@@ -192,7 +192,7 @@ Partial Class AlarmClockDashboard
         '
         'Timer1Stopwatch
         '
-        Me.Timer1Stopwatch.Interval = 10
+        Me.Timer1Stopwatch.Interval = 20
         '
         'GroupBoxStopwatch
         '
