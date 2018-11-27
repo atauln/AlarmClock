@@ -61,6 +61,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property iconfinder_clock_115752() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_clock_115752", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property Store_Door_Chime_Mike_Koenig_570742973() As System.IO.UnmanagedMemoryStream

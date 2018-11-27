@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.AlarmClock.Form1
+            Me.MainForm = Global.AlarmClock.AlarmClockDashboard
         End Sub
     End Class
 End Namespace
