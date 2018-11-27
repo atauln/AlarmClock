@@ -83,5 +83,9 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnStop.Click
         Timer1Stopwatch.Enabled = False
     End Sub
+
+    Private Sub GroupBoxStopwatch_Enter(sender As Object, e As EventArgs) Handles GroupBoxStopwatch.Enter
+
+    End Sub
 #End Region
 End Class
