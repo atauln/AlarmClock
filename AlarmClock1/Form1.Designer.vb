@@ -23,6 +23,7 @@ Partial Class AlarmClockDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AlarmClockDashboard))
         Me.GroupBoxAlarm1 = New System.Windows.Forms.GroupBox()
         Me.btnAlarm1Enable = New System.Windows.Forms.Button()
         Me.udMINAlarm1 = New System.Windows.Forms.NumericUpDown()
@@ -260,6 +261,7 @@ Partial Class AlarmClockDashboard
         Me.Controls.Add(Me.GroupBoxAlarm1)
         Me.Controls.Add(Me.lblTimeDisplay)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AlarmClockDashboard"
         Me.Text = "The Ultra Clock (by MrTheUnknown)"
