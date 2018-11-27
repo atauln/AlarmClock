@@ -65,7 +65,7 @@ Partial Class AlarmClockDashboard
         Me.GroupBoxAlarm1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBoxAlarm1.Name = "GroupBoxAlarm1"
         Me.GroupBoxAlarm1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBoxAlarm1.Size = New System.Drawing.Size(157, 385)
+        Me.GroupBoxAlarm1.Size = New System.Drawing.Size(157, 300)
         Me.GroupBoxAlarm1.TabIndex = 1
         Me.GroupBoxAlarm1.TabStop = False
         Me.GroupBoxAlarm1.Text = "Alarm 1 Properties"
@@ -73,7 +73,7 @@ Partial Class AlarmClockDashboard
         'btnAlarm1Enable
         '
         Me.btnAlarm1Enable.BackColor = System.Drawing.Color.Red
-        Me.btnAlarm1Enable.Location = New System.Drawing.Point(20, 215)
+        Me.btnAlarm1Enable.Location = New System.Drawing.Point(20, 142)
         Me.btnAlarm1Enable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAlarm1Enable.Name = "btnAlarm1Enable"
         Me.btnAlarm1Enable.Size = New System.Drawing.Size(119, 150)
@@ -83,7 +83,7 @@ Partial Class AlarmClockDashboard
         '
         'udMINAlarm1
         '
-        Me.udMINAlarm1.Location = New System.Drawing.Point(20, 134)
+        Me.udMINAlarm1.Location = New System.Drawing.Point(20, 111)
         Me.udMINAlarm1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.udMINAlarm1.Name = "udMINAlarm1"
         Me.udMINAlarm1.Size = New System.Drawing.Size(120, 22)
@@ -91,7 +91,7 @@ Partial Class AlarmClockDashboard
         '
         'udHRAlarm1
         '
-        Me.udHRAlarm1.Location = New System.Drawing.Point(20, 105)
+        Me.udHRAlarm1.Location = New System.Drawing.Point(20, 82)
         Me.udHRAlarm1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.udHRAlarm1.Name = "udHRAlarm1"
         Me.udHRAlarm1.Size = New System.Drawing.Size(120, 22)
@@ -100,7 +100,7 @@ Partial Class AlarmClockDashboard
         'dtpAlarm1
         '
         Me.dtpAlarm1.CustomFormat = "'MM'/'dd'/'yyyy'"
-        Me.dtpAlarm1.Location = New System.Drawing.Point(20, 75)
+        Me.dtpAlarm1.Location = New System.Drawing.Point(20, 52)
         Me.dtpAlarm1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpAlarm1.Name = "dtpAlarm1"
         Me.dtpAlarm1.Size = New System.Drawing.Size(121, 22)
@@ -117,7 +117,7 @@ Partial Class AlarmClockDashboard
         '
         'lblTimeDisplay
         '
-        Me.lblTimeDisplay.Location = New System.Drawing.Point(643, 11)
+        Me.lblTimeDisplay.Location = New System.Drawing.Point(503, 9)
         Me.lblTimeDisplay.Name = "lblTimeDisplay"
         Me.lblTimeDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblTimeDisplay.Size = New System.Drawing.Size(143, 22)
@@ -141,7 +141,7 @@ Partial Class AlarmClockDashboard
         Me.GroupBoxAlarm2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBoxAlarm2.Name = "GroupBoxAlarm2"
         Me.GroupBoxAlarm2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBoxAlarm2.Size = New System.Drawing.Size(157, 385)
+        Me.GroupBoxAlarm2.Size = New System.Drawing.Size(157, 300)
         Me.GroupBoxAlarm2.TabIndex = 5
         Me.GroupBoxAlarm2.TabStop = False
         Me.GroupBoxAlarm2.Text = "Alarm 2 Properties"
@@ -149,7 +149,7 @@ Partial Class AlarmClockDashboard
         'btnAlarm2Enable
         '
         Me.btnAlarm2Enable.BackColor = System.Drawing.Color.Red
-        Me.btnAlarm2Enable.Location = New System.Drawing.Point(20, 215)
+        Me.btnAlarm2Enable.Location = New System.Drawing.Point(20, 142)
         Me.btnAlarm2Enable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAlarm2Enable.Name = "btnAlarm2Enable"
         Me.btnAlarm2Enable.Size = New System.Drawing.Size(119, 150)
@@ -159,7 +159,7 @@ Partial Class AlarmClockDashboard
         '
         'udMINAlarm2
         '
-        Me.udMINAlarm2.Location = New System.Drawing.Point(20, 134)
+        Me.udMINAlarm2.Location = New System.Drawing.Point(20, 111)
         Me.udMINAlarm2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.udMINAlarm2.Name = "udMINAlarm2"
         Me.udMINAlarm2.Size = New System.Drawing.Size(120, 22)
@@ -167,7 +167,7 @@ Partial Class AlarmClockDashboard
         '
         'udHRAlarm2
         '
-        Me.udHRAlarm2.Location = New System.Drawing.Point(20, 105)
+        Me.udHRAlarm2.Location = New System.Drawing.Point(20, 82)
         Me.udHRAlarm2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.udHRAlarm2.Name = "udHRAlarm2"
         Me.udHRAlarm2.Size = New System.Drawing.Size(120, 22)
@@ -176,7 +176,7 @@ Partial Class AlarmClockDashboard
         'dtpAlarm2
         '
         Me.dtpAlarm2.CustomFormat = "'MM'/'dd'/'yyyy'"
-        Me.dtpAlarm2.Location = New System.Drawing.Point(20, 75)
+        Me.dtpAlarm2.Location = New System.Drawing.Point(20, 52)
         Me.dtpAlarm2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpAlarm2.Name = "dtpAlarm2"
         Me.dtpAlarm2.Size = New System.Drawing.Size(121, 22)
@@ -205,7 +205,7 @@ Partial Class AlarmClockDashboard
         Me.GroupBoxStopwatch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBoxStopwatch.Name = "GroupBoxStopwatch"
         Me.GroupBoxStopwatch.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBoxStopwatch.Size = New System.Drawing.Size(157, 385)
+        Me.GroupBoxStopwatch.Size = New System.Drawing.Size(157, 300)
         Me.GroupBoxStopwatch.TabIndex = 6
         Me.GroupBoxStopwatch.TabStop = False
         Me.GroupBoxStopwatch.Text = "Stopwatch"
@@ -213,7 +213,7 @@ Partial Class AlarmClockDashboard
         'btnReset
         '
         Me.btnReset.BackColor = System.Drawing.Color.Red
-        Me.btnReset.Location = New System.Drawing.Point(5, 302)
+        Me.btnReset.Location = New System.Drawing.Point(5, 227)
         Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(144, 62)
@@ -224,7 +224,7 @@ Partial Class AlarmClockDashboard
         'btnStop
         '
         Me.btnStop.BackColor = System.Drawing.Color.Red
-        Me.btnStop.Location = New System.Drawing.Point(7, 234)
+        Me.btnStop.Location = New System.Drawing.Point(7, 159)
         Me.btnStop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnStop.Name = "btnStop"
         Me.btnStop.Size = New System.Drawing.Size(144, 62)
@@ -235,7 +235,7 @@ Partial Class AlarmClockDashboard
         'btnStart
         '
         Me.btnStart.BackColor = System.Drawing.Color.Lime
-        Me.btnStart.Location = New System.Drawing.Point(7, 165)
+        Me.btnStart.Location = New System.Drawing.Point(7, 90)
         Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(144, 62)
@@ -259,7 +259,7 @@ Partial Class AlarmClockDashboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(800, 405)
+        Me.ClientSize = New System.Drawing.Size(657, 326)
         Me.Controls.Add(Me.GroupBoxStopwatch)
         Me.Controls.Add(Me.GroupBoxAlarm2)
         Me.Controls.Add(Me.GroupBoxAlarm1)
