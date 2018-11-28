@@ -40,10 +40,17 @@ Partial Class AlarmClockDashboard
         Me.txtAlarm2Name = New System.Windows.Forms.TextBox()
         Me.Timer1Stopwatch = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBoxStopwatch = New System.Windows.Forms.GroupBox()
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnStop = New System.Windows.Forms.Button()
-        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnResetStopW = New System.Windows.Forms.Button()
+        Me.btnStopStopW = New System.Windows.Forms.Button()
+        Me.btnStartStopW = New System.Windows.Forms.Button()
         Me.lblStopwatch = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnResetTimer = New System.Windows.Forms.Button()
+        Me.btnPauseContinueTimer = New System.Windows.Forms.Button()
+        Me.btnStartTimer = New System.Windows.Forms.Button()
+        Me.udSECTimer = New System.Windows.Forms.NumericUpDown()
+        Me.udMinTimer = New System.Windows.Forms.NumericUpDown()
+        Me.udHRTimer = New System.Windows.Forms.NumericUpDown()
         Me.GroupBoxAlarm1.SuspendLayout()
         CType(Me.udMINAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udHRAlarm1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +58,10 @@ Partial Class AlarmClockDashboard
         CType(Me.udMINAlarm2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udHRAlarm2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBoxStopwatch.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.udSECTimer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.udMinTimer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.udHRTimer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBoxAlarm1
@@ -74,7 +85,7 @@ Partial Class AlarmClockDashboard
         '
         Me.btnAlarm1Enable.BackColor = System.Drawing.Color.Red
         Me.btnAlarm1Enable.Location = New System.Drawing.Point(20, 142)
-        Me.btnAlarm1Enable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAlarm1Enable.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAlarm1Enable.Name = "btnAlarm1Enable"
         Me.btnAlarm1Enable.Size = New System.Drawing.Size(119, 150)
         Me.btnAlarm1Enable.TabIndex = 4
@@ -117,7 +128,7 @@ Partial Class AlarmClockDashboard
         '
         'lblTimeDisplay
         '
-        Me.lblTimeDisplay.Location = New System.Drawing.Point(503, 9)
+        Me.lblTimeDisplay.Location = New System.Drawing.Point(651, 9)
         Me.lblTimeDisplay.Name = "lblTimeDisplay"
         Me.lblTimeDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblTimeDisplay.Size = New System.Drawing.Size(143, 22)
@@ -149,7 +160,7 @@ Partial Class AlarmClockDashboard
         '
         Me.btnAlarm2Enable.BackColor = System.Drawing.Color.Red
         Me.btnAlarm2Enable.Location = New System.Drawing.Point(20, 142)
-        Me.btnAlarm2Enable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAlarm2Enable.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAlarm2Enable.Name = "btnAlarm2Enable"
         Me.btnAlarm2Enable.Size = New System.Drawing.Size(119, 150)
         Me.btnAlarm2Enable.TabIndex = 4
@@ -196,9 +207,9 @@ Partial Class AlarmClockDashboard
         'GroupBoxStopwatch
         '
         Me.GroupBoxStopwatch.BackColor = System.Drawing.Color.White
-        Me.GroupBoxStopwatch.Controls.Add(Me.btnReset)
-        Me.GroupBoxStopwatch.Controls.Add(Me.btnStop)
-        Me.GroupBoxStopwatch.Controls.Add(Me.btnStart)
+        Me.GroupBoxStopwatch.Controls.Add(Me.btnResetStopW)
+        Me.GroupBoxStopwatch.Controls.Add(Me.btnStopStopW)
+        Me.GroupBoxStopwatch.Controls.Add(Me.btnStartStopW)
         Me.GroupBoxStopwatch.Controls.Add(Me.lblStopwatch)
         Me.GroupBoxStopwatch.Location = New System.Drawing.Point(340, 14)
         Me.GroupBoxStopwatch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -209,38 +220,38 @@ Partial Class AlarmClockDashboard
         Me.GroupBoxStopwatch.TabStop = False
         Me.GroupBoxStopwatch.Text = "Stopwatch"
         '
-        'btnReset
+        'btnResetStopW
         '
-        Me.btnReset.BackColor = System.Drawing.Color.Red
-        Me.btnReset.Location = New System.Drawing.Point(5, 227)
-        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(144, 62)
-        Me.btnReset.TabIndex = 3
-        Me.btnReset.Text = "RESET"
-        Me.btnReset.UseVisualStyleBackColor = False
+        Me.btnResetStopW.BackColor = System.Drawing.Color.Red
+        Me.btnResetStopW.Location = New System.Drawing.Point(5, 227)
+        Me.btnResetStopW.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnResetStopW.Name = "btnResetStopW"
+        Me.btnResetStopW.Size = New System.Drawing.Size(144, 62)
+        Me.btnResetStopW.TabIndex = 3
+        Me.btnResetStopW.Text = "RESET"
+        Me.btnResetStopW.UseVisualStyleBackColor = False
         '
-        'btnStop
+        'btnStopStopW
         '
-        Me.btnStop.BackColor = System.Drawing.Color.Red
-        Me.btnStop.Location = New System.Drawing.Point(7, 159)
-        Me.btnStop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(144, 62)
-        Me.btnStop.TabIndex = 2
-        Me.btnStop.Text = "STOP"
-        Me.btnStop.UseVisualStyleBackColor = False
+        Me.btnStopStopW.BackColor = System.Drawing.Color.Red
+        Me.btnStopStopW.Location = New System.Drawing.Point(7, 159)
+        Me.btnStopStopW.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnStopStopW.Name = "btnStopStopW"
+        Me.btnStopStopW.Size = New System.Drawing.Size(144, 62)
+        Me.btnStopStopW.TabIndex = 2
+        Me.btnStopStopW.Text = "STOP"
+        Me.btnStopStopW.UseVisualStyleBackColor = False
         '
-        'btnStart
+        'btnStartStopW
         '
-        Me.btnStart.BackColor = System.Drawing.Color.Lime
-        Me.btnStart.Location = New System.Drawing.Point(7, 90)
-        Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(144, 62)
-        Me.btnStart.TabIndex = 1
-        Me.btnStart.Text = "START"
-        Me.btnStart.UseVisualStyleBackColor = False
+        Me.btnStartStopW.BackColor = System.Drawing.Color.Lime
+        Me.btnStartStopW.Location = New System.Drawing.Point(7, 90)
+        Me.btnStartStopW.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnStartStopW.Name = "btnStartStopW"
+        Me.btnStartStopW.Size = New System.Drawing.Size(144, 62)
+        Me.btnStartStopW.TabIndex = 1
+        Me.btnStartStopW.Text = "START"
+        Me.btnStartStopW.UseVisualStyleBackColor = False
         '
         'lblStopwatch
         '
@@ -253,12 +264,85 @@ Partial Class AlarmClockDashboard
         Me.lblStopwatch.Text = "0.00s"
         Me.lblStopwatch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.btnResetTimer)
+        Me.GroupBox1.Controls.Add(Me.btnPauseContinueTimer)
+        Me.GroupBox1.Controls.Add(Me.btnStartTimer)
+        Me.GroupBox1.Controls.Add(Me.udSECTimer)
+        Me.GroupBox1.Controls.Add(Me.udMinTimer)
+        Me.GroupBox1.Controls.Add(Me.udHRTimer)
+        Me.GroupBox1.Location = New System.Drawing.Point(503, 14)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(157, 300)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Timer"
+        '
+        'btnResetTimer
+        '
+        Me.btnResetTimer.BackColor = System.Drawing.Color.Red
+        Me.btnResetTimer.Location = New System.Drawing.Point(7, 244)
+        Me.btnResetTimer.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnResetTimer.Name = "btnResetTimer"
+        Me.btnResetTimer.Size = New System.Drawing.Size(144, 43)
+        Me.btnResetTimer.TabIndex = 7
+        Me.btnResetTimer.Text = "RESET"
+        Me.btnResetTimer.UseVisualStyleBackColor = False
+        '
+        'btnPauseContinueTimer
+        '
+        Me.btnPauseContinueTimer.BackColor = System.Drawing.Color.Red
+        Me.btnPauseContinueTimer.Location = New System.Drawing.Point(7, 193)
+        Me.btnPauseContinueTimer.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPauseContinueTimer.Name = "btnPauseContinueTimer"
+        Me.btnPauseContinueTimer.Size = New System.Drawing.Size(144, 43)
+        Me.btnPauseContinueTimer.TabIndex = 6
+        Me.btnPauseContinueTimer.Text = "PAUSE"
+        Me.btnPauseContinueTimer.UseVisualStyleBackColor = False
+        '
+        'btnStartTimer
+        '
+        Me.btnStartTimer.BackColor = System.Drawing.Color.Lime
+        Me.btnStartTimer.Location = New System.Drawing.Point(6, 142)
+        Me.btnStartTimer.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnStartTimer.Name = "btnStartTimer"
+        Me.btnStartTimer.Size = New System.Drawing.Size(144, 43)
+        Me.btnStartTimer.TabIndex = 5
+        Me.btnStartTimer.Text = "START"
+        Me.btnStartTimer.UseVisualStyleBackColor = False
+        '
+        'udSECTimer
+        '
+        Me.udSECTimer.Location = New System.Drawing.Point(18, 108)
+        Me.udSECTimer.Name = "udSECTimer"
+        Me.udSECTimer.Size = New System.Drawing.Size(120, 22)
+        Me.udSECTimer.TabIndex = 2
+        '
+        'udMinTimer
+        '
+        Me.udMinTimer.Location = New System.Drawing.Point(18, 80)
+        Me.udMinTimer.Name = "udMinTimer"
+        Me.udMinTimer.Size = New System.Drawing.Size(120, 22)
+        Me.udMinTimer.TabIndex = 1
+        '
+        'udHRTimer
+        '
+        Me.udHRTimer.Location = New System.Drawing.Point(18, 52)
+        Me.udHRTimer.Name = "udHRTimer"
+        Me.udHRTimer.Size = New System.Drawing.Size(120, 22)
+        Me.udHRTimer.TabIndex = 0
+        '
         'AlarmClockDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(657, 326)
+        Me.ClientSize = New System.Drawing.Size(806, 326)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBoxStopwatch)
         Me.Controls.Add(Me.GroupBoxAlarm2)
         Me.Controls.Add(Me.GroupBoxAlarm1)
@@ -277,6 +361,10 @@ Partial Class AlarmClockDashboard
         CType(Me.udMINAlarm2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.udHRAlarm2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBoxStopwatch.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.udSECTimer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.udMinTimer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.udHRTimer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -296,8 +384,15 @@ Partial Class AlarmClockDashboard
     Friend WithEvents txtAlarm2Name As TextBox
     Friend WithEvents Timer1Stopwatch As Timer
     Friend WithEvents GroupBoxStopwatch As GroupBox
-    Friend WithEvents btnReset As Button
-    Friend WithEvents btnStop As Button
-    Friend WithEvents btnStart As Button
+    Friend WithEvents btnResetStopW As Button
+    Friend WithEvents btnStopStopW As Button
+    Friend WithEvents btnStartStopW As Button
     Friend WithEvents lblStopwatch As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnPauseContinueTimer As Button
+    Friend WithEvents btnStartTimer As Button
+    Friend WithEvents udSECTimer As NumericUpDown
+    Friend WithEvents udMinTimer As NumericUpDown
+    Friend WithEvents udHRTimer As NumericUpDown
+    Friend WithEvents btnResetTimer As Button
 End Class

@@ -71,21 +71,16 @@
         lblStopwatch.Text = StopWatchTime.ToString + "s"
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnResetStopW.Click
         StopWatchTime = 0
         lblStopwatch.Text = StopWatchTime.ToString + "s"
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnStartStopW.Click
         Timer1Stopwatch.Enabled = True
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnStop.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnStopStopW.Click
         Timer1Stopwatch.Enabled = False
     End Sub
-
-    Private Sub GroupBoxStopwatch_Enter(sender As Object, e As EventArgs) Handles GroupBoxStopwatch.Enter
-
-    End Sub
-#End Region
 End Class
