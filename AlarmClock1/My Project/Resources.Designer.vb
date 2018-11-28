@@ -69,14 +69,5 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        '''</summary>
-        Friend ReadOnly Property Store_Door_Chime_Mike_Koenig_570742973() As System.IO.UnmanagedMemoryStream
-            Get
-                Return ResourceManager.GetStream("Store_Door_Chime_Mike_Koenig_570742973", resourceCulture)
-            End Get
-        End Property
     End Module
 End Namespace
