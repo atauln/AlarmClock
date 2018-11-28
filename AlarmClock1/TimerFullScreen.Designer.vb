@@ -32,6 +32,7 @@ Partial Class TimerFullScreen
         Me.udMinTimer = New System.Windows.Forms.NumericUpDown()
         Me.udHRTimer = New System.Windows.Forms.NumericUpDown()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.GroupBox1.SuspendLayout()
         CType(Me.udSECTimer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.udMinTimer, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -128,12 +129,21 @@ Partial Class TimerFullScreen
         '
         Me.Timer.Interval = 1000
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 260)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(301, 13)
+        Me.ProgressBar1.Step = 1
+        Me.ProgressBar1.TabIndex = 9
+        '
         'TimerFullScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(299, 262)
+        Me.ClientSize = New System.Drawing.Size(299, 271)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.GroupBox1)
         Me.MaximizeBox = False
         Me.Name = "TimerFullScreen"
@@ -155,4 +165,5 @@ Partial Class TimerFullScreen
     Friend WithEvents udMinTimer As NumericUpDown
     Friend WithEvents udHRTimer As NumericUpDown
     Friend WithEvents Timer As Timer
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class

@@ -11,10 +11,13 @@
         TimerSeconds = udSECTimer.Value
         TimerMinutes = udMinTimer.Value
         TimerHours = udHRTimer.Value
+        ProgressBar1.Value = 0
+        ProgressBar1.Maximum = udSECTimer.Value + (udMinTimer.Value * 60) + (udHRTimer.Value * 60 * 60)
         Timer.Enabled = True
     End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+
         If TimerSeconds < 0 Then
             TimerSeconds = 59
             TimerMinutes -= 1
@@ -27,9 +30,11 @@
             lblTimer.Text = "0:00:00"
             Timer.Enabled = False
             MsgBox("Your timer has been activated", , "Timer")
+            Exit Sub
         End If
         lblTimer.Text = TimerHours.ToString + ":" + TimerMinutes.ToString + ":" + TimerSeconds.ToString
         TimerSeconds -= 1
+        ProgressBar1.Value += 1
     End Sub
 
     Private Sub btnResetTimer_Click(sender As Object, e As EventArgs) Handles btnResetTimer.Click
@@ -40,6 +45,7 @@
         Timer.Enabled = False
         btnPauseContinueTimer.Text = "Continue"
         btnPauseContinueTimer.BackColor = Color.Lime
+        ProgressBar1.Value = 0
     End Sub
 
     Private Sub btnPauseContinueTimer_Click(sender As Object, e As EventArgs) Handles btnPauseContinueTimer.Click

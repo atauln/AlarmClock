@@ -21,5 +21,6 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnStopStopW.Click
         StopwatchTimer.Enabled = False
     End Sub
+
 #End Region
 End Class
