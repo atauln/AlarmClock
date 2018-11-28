@@ -143,7 +143,6 @@
   <ItemGroup>
     <None Include="iconfinder_clock_115752.ico" />
     <Content Include="My Project\Store_Door_Chime-Mike_Koenig-570742973.wav" />
-    <Content Include="Store_Door_Chime-Mike_Koenig-570742973.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
